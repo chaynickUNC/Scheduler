@@ -110,6 +110,7 @@ def scheduler(mode="h", t_min=60, t_max=80):
 
     # runs concurrently until a core hits t_max, then switches to running all processes sequentially on the coolest core until avg temp is under t_min, then runs concurrently again
     if mode == "h":
+        
         p1.start()
         p2.start()
         p3.start()
